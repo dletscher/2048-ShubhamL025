@@ -81,9 +81,9 @@ class Player(BasePlayer):
         board = state._board
         empty = board.count(0)
         return state.getScore() + empty * 1000
-		
+    
     def moveOrder(self, state):
-	    return state.actions()
+        return state.actions()
 
     def stats(self):
         print(f'Average depth: {self._depthCount/self._count:.2f}')
