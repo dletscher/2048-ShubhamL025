@@ -85,6 +85,6 @@ class Player(BasePlayer):
     def moveOrder(self, state):
 	    return state.actions()
 
-def stats(self):
-    print(f'Average depth: {self._depthCount/self._count:.2f}')
-    print(f'Branching factor: {self._childCount / self._parentCount:.2f}')
+    def stats(self):
+        print(f'Average depth: {self._depthCount/self._count:.2f}')
+        print(f'Branching factor: {self._childCount / self._parentCount:.2f}')
